@@ -1,0 +1,10 @@
+adminUser:
+  password: local:ramsjx/adminUser:password
+  username: admin
+enableDocker: false
+pipelineUser:
+  email: ram.tandukar@gmail.com
+  token: local:ramsjx/pipelineUser:token
+  username: ramtandukar
+prow:
+  hmacToken: local:ramsjx/prow:hmacToken
