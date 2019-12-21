@@ -1,0 +1,21 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: ramtandukar
+    provider: github
+    repository: microservices-frontend
+  name: ramtandukar-microservices-frontend
+spec:
+  description: Imported application for ramtandukar/microservices-frontend
+  httpCloneURL: https://github.com/ramtandukar/microservices-frontend.git
+  org: ramtandukar
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: microservices-frontend
+  scheduler:
+    kind: ""
+    name: ""
+  url: https://github.com/ramtandukar/microservices-frontend.git
