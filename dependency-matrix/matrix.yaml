@@ -1,0 +1,7 @@
+dependencies:
+- host: github.com
+  owner: ramtandukar
+  repo: microservices-frontend
+  url: https://github.com/ramtandukar/microservices-frontend.git
+  version: ""
+  versionURL: ""
