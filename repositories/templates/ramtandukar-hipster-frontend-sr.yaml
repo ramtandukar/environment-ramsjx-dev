@@ -1,0 +1,21 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: ramtandukar
+    provider: github
+    repository: hipster-frontend
+  name: ramtandukar-hipster-frontend
+spec:
+  description: Imported application for ramtandukar/hipster-frontend
+  httpCloneURL: https://github.com/ramtandukar/hipster-frontend.git
+  org: ramtandukar
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: hipster-frontend
+  scheduler:
+    kind: ""
+    name: ""
+  url: https://github.com/ramtandukar/hipster-frontend.git
