@@ -1,0 +1,65 @@
+
+Showing logs for build [32mramtandukar-environment-ramsjx-fsbnl-1[0m stage [32mpr-checks[0m and container [32mstep-credential-initializer-5h9ss[0m
+{"level":"warn","ts":1577283404.6100707,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1577283404.6112652,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+
+Showing logs for build [32mramtandukar-environment-ramsjx-fsbnl-1[0m stage [32mpr-checks[0m and container [32mstep-working-dir-initializer-k5c4r[0m
+{"level":"warn","ts":1577283405.940005,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1577283405.9459624,"logger":"fallback-logger","caller":"bash/main.go:65","msg":"Successfully executed command \"mkdir -p /workspace/source\""}
+
+Showing logs for build [32mramtandukar-environment-ramsjx-fsbnl-1[0m stage [32mpr-checks[0m and container [32mstep-place-tools[0m
+
+Showing logs for build [32mramtandukar-environment-ramsjx-fsbnl-1[0m stage [32mpr-checks[0m and container [32mstep-git-source-ramtandukar-environment-ramsjx-2wjlh[0m
+{"level":"warn","ts":1577283414.096962,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1577283415.4940102,"logger":"fallback-logger","caller":"git/git.go:102","msg":"Successfully cloned https://github.com/***********/environment-rams**-dev.git @ master in path /workspace/source"}
+
+Showing logs for build [32mramtandukar-environment-ramsjx-fsbnl-1[0m stage [32mpr-checks[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:2fa01259ea65dc1357f57c3ceca6540b836d8c04,6:eb5c8d22b739e0e1dd02fc72665d53544886d1ca
+DEBUG: ran git fetch --unshallow origin eb5c8d22b739e0e1dd02fc72665d53544886d1ca: 2fa01259ea65dc1357f57c3ceca6540b836d8c04: in 
+DEBUG: ran git checkout master in 
+DEBUG: ran git reset --hard 2fa01259ea65dc1357f57c3ceca6540b836d8c04 in 
+DEBUG: ran clean --force -d . in 
+DEBUG: ran git merge eb5c8d22b739e0e1dd02fc72665d53544886d1ca in 
+Merged SHA eb5c8d22b739e0e1dd02fc72665d53544886d1ca with commit message 'chore(deps): bump https://github.com/***********/hipster-frontend.git' into base branch master
+
+Showing logs for build [32mramtandukar-environment-ramsjx-fsbnl-1[0m stage [32mpr-checks[0m and container [32mstep-verify-parameters[0m
+
+Showing logs for build [32mramtandukar-environment-ramsjx-fsbnl-1[0m stage [32mpr-checks[0m and container [32mstep-lint-env-helm[0m
+rm -rf charts
+rm -rf requirements.lock
+helm init --client-only
+Creating /builder/home/.helm 
+Creating /builder/home/.helm/repository 
+Creating /builder/home/.helm/repository/cache 
+Creating /builder/home/.helm/repository/local 
+Creating /builder/home/.helm/plugins 
+Creating /builder/home/.helm/starters 
+Creating /builder/home/.helm/cache/archive 
+Creating /builder/home/.helm/repository/repositories.yaml 
+Adding stable repo with URL: https://kubernetes-charts.storage.googleapis.com 
+Adding local repo with URL: http://127.0.0.1:8879/charts 
+$HELM_HOME has been configured at /builder/home/.helm.
+Not installing Tiller due to 'client-only' flag having been set
+helm repo add jenkins-x https://storage.googleapis.com/chartmuseum.jenkins-x.io
+"jenkins-x" has been added to your repositories
+helm repo add bitnami https://charts.bitnami.com/bitnami
+"bitnami" has been added to your repositories
+helm repo add stable https://kubernetes-charts.storage.googleapis.com
+"stable" has been added to your repositories
+** step helm build --boot --provider-values-dir=../kubeProviders
+WARNING: could not find a git repository in the directory .: No git conf dir found
+Ignoring templates/.gitignore
+Applying the kubernetes overrides at ../kubeProviders/gke/values.tmpl.yaml
+Verifying the helm requirements versions in dir: . using version stream URL: https://github.com/jenkins-x/jenkins-x-versions.git and git ref: v1.0.268
+Wrote chart values.yaml values.yaml generated from directory tree
+WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
+Adding missing Helm repo: jenkins-x-chartmuseum http://jenkins-x-chartmuseum:8080
+Successfully added Helm repository jenkins-x-chartmuseum.
+WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
+Adding missing Helm repo: chartmuseum.jenkins-x.io http://chartmuseum.jenkins-x.io
+Successfully added Helm repository chartmuseum.jenkins-x.io.
+helm lint .
+==> Linting .
+Lint OK
+
+1 chart(s) linted, no failures
