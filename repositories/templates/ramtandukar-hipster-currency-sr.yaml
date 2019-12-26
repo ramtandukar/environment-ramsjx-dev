@@ -1,0 +1,21 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: ramtandukar
+    provider: github
+    repository: hipster-currency
+  name: ramtandukar-hipster-currency
+spec:
+  description: Imported application for ramtandukar/hipster-currency
+  httpCloneURL: https://github.com/ramtandukar/hipster-currency.git
+  org: ramtandukar
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: hipster-currency
+  scheduler:
+    kind: ""
+    name: ""
+  url: https://github.com/ramtandukar/hipster-currency.git
