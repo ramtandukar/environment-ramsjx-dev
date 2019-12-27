@@ -1,0 +1,21 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: ramtandukar
+    provider: github
+    repository: tester
+  name: ramtandukar-tester
+spec:
+  description: Imported application for ramtandukar/tester
+  httpCloneURL: https://github.com/ramtandukar/tester.git
+  org: ramtandukar
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: tester
+  scheduler:
+    kind: ""
+    name: ""
+  url: https://github.com/ramtandukar/tester.git
