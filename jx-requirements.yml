@@ -15,7 +15,7 @@ cluster:
   zone: europe-west1-b
 environments:
 - ingress:
-    domain: 104.155.117.117.nip.io
+    domain: 35.241.207.204.nip.io
     externalDNS: false
     namespaceSubDomain: -jx.
     tls:
@@ -43,7 +43,7 @@ environments:
   key: production
 gitops: true
 ingress:
-  domain: 104.155.117.117.nip.io
+  domain: 35.241.207.204.nip.io
   externalDNS: false
   namespaceSubDomain: -jx.
   tls:
