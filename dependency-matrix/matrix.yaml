@@ -17,3 +17,9 @@ dependencies:
   url: https://github.com/ramtandukar/hipster-currency.git
   version: ""
   versionURL: ""
+- host: github.com
+  owner: ramtandukar
+  repo: tester
+  url: https://github.com/ramtandukar/tester.git
+  version: ""
+  versionURL: ""
