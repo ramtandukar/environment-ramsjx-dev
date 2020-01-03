@@ -1,0 +1,21 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: ramtandukar
+    provider: github
+    repository: react-jx2
+  name: ramtandukar-react-jx2
+spec:
+  description: Imported application for ramtandukar/react-jx2
+  httpCloneURL: https://github.com/ramtandukar/react-jx2.git
+  org: ramtandukar
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: react-jx2
+  scheduler:
+    kind: ""
+    name: ""
+  url: https://github.com/ramtandukar/react-jx2.git
