@@ -8,3 +8,4 @@ Dependency | Sources | Version | Mismatched versions
 [ramtandukar/tester](https://github.com/ramtandukar/tester.git) |  | []() | 
 [ramtandukar/nodejs-jx](https://github.com/ramtandukar/nodejs-jx.git) |  | []() | 
 [ramtandukar/react-jx](https://github.com/ramtandukar/react-jx.git) |  | []() | 
+[ramtandukar/react-jx2](https://github.com/ramtandukar/react-jx2.git) |  | []() | 
