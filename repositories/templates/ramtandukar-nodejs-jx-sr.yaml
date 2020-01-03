@@ -1,0 +1,21 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: ramtandukar
+    provider: github
+    repository: nodejs-jx
+  name: ramtandukar-nodejs-jx
+spec:
+  description: Imported application for ramtandukar/nodejs-jx
+  httpCloneURL: https://github.com/ramtandukar/nodejs-jx.git
+  org: ramtandukar
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: nodejs-jx
+  scheduler:
+    kind: ""
+    name: ""
+  url: https://github.com/ramtandukar/nodejs-jx.git

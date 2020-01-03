@@ -23,3 +23,9 @@ dependencies:
   url: https://github.com/ramtandukar/tester.git
   version: ""
   versionURL: ""
+- host: github.com
+  owner: ramtandukar
+  repo: nodejs-jx
+  url: https://github.com/ramtandukar/nodejs-jx.git
+  version: ""
+  versionURL: ""
