@@ -41,3 +41,9 @@ dependencies:
   url: https://github.com/ramtandukar/react-jx2.git
   version: ""
   versionURL: ""
+- host: github.com
+  owner: ramtandukar
+  repo: jx-react3
+  url: https://github.com/ramtandukar/jx-react3.git
+  version: ""
+  versionURL: ""
