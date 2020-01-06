@@ -1,0 +1,21 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: ramtandukar
+    provider: github
+    repository: jx-react3
+  name: ramtandukar-jx-react3
+spec:
+  description: Imported application for ramtandukar/jx-react3
+  httpCloneURL: https://github.com/ramtandukar/jx-react3.git
+  org: ramtandukar
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: jx-react3
+  scheduler:
+    kind: ""
+    name: ""
+  url: https://github.com/ramtandukar/jx-react3.git
