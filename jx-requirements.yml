@@ -4,6 +4,8 @@ autoUpdate:
 bootConfigURL: https://github.com/ramtandukar/environment-ramsjx-dev
 cluster:
   clusterName: ramsjx
+  devEnvApprovers:
+  - ramtandukar
   environmentGitOwner: ramtandukar
   gitKind: github
   gitName: github
@@ -15,7 +17,7 @@ cluster:
   zone: europe-west1-b
 environments:
 - ingress:
-    domain: 35.205.97.184.nip.io
+    domain: 34.77.28.75.nip.io
     externalDNS: false
     namespaceSubDomain: -jx.
     tls:
@@ -43,7 +45,7 @@ environments:
   key: production
 gitops: true
 ingress:
-  domain: 35.205.97.184.nip.io
+  domain: 34.77.28.75.nip.io
   externalDNS: false
   namespaceSubDomain: -jx.
   tls:
@@ -67,7 +69,9 @@ storage:
     enabled: false
     url: ""
 vault: {}
-velero: {}
+velero:
+  schedule: ""
+  ttl: ""
 versionStream:
   ref: v1.0.268
   url: https://github.com/jenkins-x/jenkins-x-versions.git
